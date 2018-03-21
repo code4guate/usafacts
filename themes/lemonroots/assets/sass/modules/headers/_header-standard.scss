@@ -1,6 +1,6 @@
 // wraps the logo container and nav container
 .header__wrap {
-  @media (min-width: $grid-float-breakpoint){ // when nav is not collapsed
+  @include media-breakpoint-up(md) { // when nav is not collapsed
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -12,7 +12,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 0;
+  padding: 30px 0;
 
   &::before,
   &::after {

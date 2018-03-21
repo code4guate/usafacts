@@ -8,6 +8,7 @@
     <div class="header__wrap">
       <div class="navbar-header">
         <a class="logo" href="<?php echo home_url(); ?>/">
+          
           <?php
           $site_logo = get_option( 'options_site_logo' );
 
@@ -40,6 +41,7 @@
           wp_nav_menu( [ 'theme_location' => 'primary_navigation', 'menu_class' => 'nav navbar-nav' ] );
         }
         ?>
+
       </nav>
     </div>
   </div>

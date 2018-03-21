@@ -18,6 +18,13 @@ require_once locate_template('/lib/scripts.php');         // Scripts and stylesh
 require_once locate_template('/lib/theme-options.php');   // Theme Options Page and Fields (via ACF)
 require_once locate_template('/lib/custom.php');          // Custom functions
 
+// The custom logo
+add_theme_support( 'custom-logo', array(
+    'height'      => 28,
+    'width'       => 278
+) );
+
+
 /**
  * Hello Git World!
  * It's working!!!!

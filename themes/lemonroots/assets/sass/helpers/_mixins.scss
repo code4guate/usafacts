@@ -15,38 +15,15 @@
     # Breakpoints
     - example usage: @include bp-sm { // code goes in here }
  =============================================================*/
-@mixin bp-sm {
-  @media(min-width: $screen-sm-min) {
-    @content;
-  }
-}
+// to use bootstrap 4 breakpoints use the following examples:
+// @include media-breakpoint-up(sm) {
+//   // Styles
+// }
 
-@mixin bp-md {
-  @media(min-width: $screen-md-min) {
-    @content;
-  }
-}
+// @include media-breakpoint-down(sm) {
+//   // Styles
+// }
 
-@mixin bp-lg {
-  @media(min-width: $screen-lg-min) {
-    @content;
-  }
-}
-
-@mixin bp-xs-max {
-  @media(max-width: $screen-xs-max) {
-    @content;
-  }
-}
-
-@mixin bp-sm-max {
-  @media(max-width: $screen-sm-max) {
-    @content;
-  }
-}
-
-@mixin bp-md-max {
-  @media(max-width: $screen-md-max) {
-    @content;
-  }
-}
+// @include media-breakpoint-between(sm, md) {
+//     // your code
+// }

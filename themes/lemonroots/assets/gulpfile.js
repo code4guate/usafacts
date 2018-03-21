@@ -1,7 +1,7 @@
 'use strict';
 
 // For Browser-Sync
-var siteURL = "http://localhost/Ryan/usafact/"; // Change to the correct url
+var siteURL = "http://localhost/usafact/"; // Change to the correct url
 // also change the string in the RegExp() in the watch task near the bottom of this file to the correct stylesheet to be replaced.
 
 var gulp         = require('gulp');
@@ -57,6 +57,7 @@ gulp.task('js', function () {
             'js/vendor/bootstrap/scrollspy.js',
             'js/vendor/bootstrap/tab.js',
             'js/vendor/bootstrap/affix.js',
+            'js/vendor/tether.js',
             'js/vendor/_*.js',
             'js/_main.js'
         ])
