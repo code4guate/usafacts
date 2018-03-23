@@ -14,7 +14,7 @@
 @import "base/layout";
 @import "base/typography";
 @import "base/wp-generated";
-
+ 
 // Elements
 @import "elements/links";
 @import "elements/media";
@@ -22,7 +22,7 @@
 
 // Modules
 @import "modules/header";
-//@import "modules/headers/header-top-bar";
+@import "modules/headers/header-top-bar";
   // header variations
     @import "modules/headers/header-standard";
   //  @import "modules/headers/header-two-navs";

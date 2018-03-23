@@ -1,12 +1,13 @@
+
 <?php
   if ( ! is_active_sidebar( 'header-top-bar-left' ) && ! is_active_sidebar( 'header-top-bar-right' ) ) {
     return;
   }
 ?>
+hello
 <div class="header__top-bar">
   <div class="container">
     <div class="row">
-      <h1>Hola</h1>
       <div class="col-sm-12">
         <div class="top-bar__content">
           <?php if ( is_active_sidebar( 'header-top-bar-left' ) ) : ?>

@@ -1,7 +1,7 @@
 'use strict';
 
 // For Browser-Sync
-var siteURL = "http://localhost/usafact/"; // Change to the correct url
+var siteURL = "http://localhost/Ryan/usafact/"; // Change to the correct url
 // also change the string in the RegExp() in the watch task near the bottom of this file to the correct stylesheet to be replaced.
 
 var gulp         = require('gulp');
@@ -83,6 +83,10 @@ gulp.task('watch', function () {
     // only initialize browser sync when we pass a '--local' flag to gulp watch
     if (argv.local) {
         browserSync.init({
+            port: 80,
+            ui: {
+              port: 80
+            },
             proxy: siteURL,
             serveStatic: ['./css'],
             rewriteRules: [{
@@ -93,3 +97,4 @@ gulp.task('watch', function () {
     }
 
 });
+
