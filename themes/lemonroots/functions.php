@@ -24,7 +24,6 @@ add_theme_support( 'custom-logo', array(
     'width'       => 278
 ) );
 
-
 /**
  * Hello Git World!
  * It's working!!!!
