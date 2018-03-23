@@ -33,11 +33,9 @@
             get_template_part( 'templates/header' );
         }
     ?>
-
-
-
+    
     <?php if (!is_front_page() ): ?>
-        <?php $image = get_field('background_image'); 
+        <?php $image = get_field('background-image'); 
         $globalBackground = get_field('banner_test' , 'option'); ?>
 
 
@@ -112,11 +110,6 @@
     ?>
 
     <div class="site-main wrapper" role="document">
-       <!--  <?php if ( get_field('full_width') == true ) : ?>
-            <div class="full-width-contain">
-        <?php else: ?>
-            <div class="container">
-        <?php endif; ?> -->
         <div class="full-width-contain">
             <div class="content row">
                 <main class="main <?php echo roots_main_class(); ?>" role="main">

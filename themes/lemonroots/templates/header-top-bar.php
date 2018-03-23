@@ -4,7 +4,7 @@
     return;
   }
 ?>
-hello
+
 <div class="header__top-bar">
   <div class="container">
     <div class="row">

@@ -45,21 +45,22 @@ gulp.task('sass', function () {
 gulp.task('js', function () {
     return gulp
         .src([
-            'js/vendor/bootstrap/transition.js',
-            'js/vendor/bootstrap/alert.js',
-            'js/vendor/bootstrap/button.js',
-            'js/vendor/bootstrap/carousel.js',
-            'js/vendor/bootstrap/collapse.js',
-            'js/vendor/bootstrap/dropdown.js',
-            'js/vendor/bootstrap/modal.js',
-            'js/vendor/bootstrap/tooltip.js',
-            'js/vendor/bootstrap/popover.js',
-            'js/vendor/bootstrap/scrollspy.js',
-            'js/vendor/bootstrap/tab.js',
-            'js/vendor/bootstrap/affix.js',
-            'js/vendor/tether.js',
-            'js/vendor/_*.js',
-            'js/_main.js'
+            'js/**/*.js'
+            // 'js/vendor/bootstrap/transition.js',
+            // 'js/vendor/bootstrap/alert.js',
+            // 'js/vendor/bootstrap/button.js',
+            // 'js/vendor/bootstrap/carousel.js',
+            // 'js/vendor/bootstrap/collapse.js',
+            // 'js/vendor/bootstrap/dropdown.js',
+            // 'js/vendor/bootstrap/modal.js',
+            // 'js/vendor/bootstrap/tooltip.js',
+            // 'js/vendor/bootstrap/popover.js',
+            // 'js/vendor/bootstrap/scrollspy.js',
+            // 'js/vendor/bootstrap/tab.js',
+            // 'js/vendor/bootstrap/affix.js',
+            // 'js/vendor/tether.js',
+            // 'js/vendor/_*.js',
+            // 'js/_main.js'
         ])
         .pipe(concat('scripts.min.js'))
         .pipe(gulp.dest('./js/'))
