@@ -193,7 +193,6 @@ class headerTopLinkWidget extends WP_Widget {
     }
 
     function form( $instance ) {
-      echo 'link text: '; print_r($instance);
       $linkText = $instance[ 'link-text' ];
       $linkHREF = $instance[ 'link-href' ];
       $linkIcon = $instance[ 'link-icon' ];

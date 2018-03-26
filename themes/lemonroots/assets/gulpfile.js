@@ -45,6 +45,7 @@ gulp.task('sass', function () {
 gulp.task('js', function () {
     return gulp
         .src([
+            '!js/scripts.min.js',
             'js/**/*.js'
             // 'js/vendor/bootstrap/transition.js',
             // 'js/vendor/bootstrap/alert.js',
