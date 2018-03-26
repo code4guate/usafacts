@@ -112,6 +112,7 @@
     <div class="site-main wrapper" role="document">
         <div class="full-width-contain">
             <div class="content row">
+                
                 <main class="main <?php echo roots_main_class(); ?>" role="main">
                     <?php include roots_template_path(); ?>
                 </main><!-- /.main -->

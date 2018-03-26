@@ -1,7 +1,7 @@
 #gulp-compiled pages
-main.min.css
-main.min.css.map
-scripts.min.js
+*/main.min.css
+*/main.min.css.map
+*/scripts.min.js
 
 # Logs
 logs
