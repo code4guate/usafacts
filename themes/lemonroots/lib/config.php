@@ -11,7 +11,6 @@ add_theme_support('jquery-cdn');            // Enable to load jQuery from the Go
     # Header Config
  ===========================*/
 add_theme_support('header-top-bar');
-
 // add_theme_support('header-two-navs');
 // add_theme_support('header-nav-bottom');
 

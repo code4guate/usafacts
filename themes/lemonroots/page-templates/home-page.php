@@ -1,17 +1,10 @@
 <?php
 /*
-Template Name: Home
+Template Name: Homepage
 */
 ?>
 
 <?php get_template_part('templates/head'); ?>
-
-<?php 
-    // $baseFields = get_fields(); 
-    // echo '<pre>';
-    // var_dump($baseFields);
-    // echo '</pre>';
-?>
 
 <?php if($baseFields['body_class']): ?>
     <body <?php body_class( $baseFields["body_class"] ); ?>>  
@@ -22,15 +15,15 @@ Template Name: Home
     <div class="site-main wrapper" role="document">
        <section id="hero" style="background-image: url(<?php echo get_template_directory_uri() . '/assets/img/AdobeStock_144121574_Preview.jpeg' ?>);">
         <div class="container">
-            <h1>All-in-one Employee Screening</h1>
-            <h4>Solution for U.S. and Global Companies</h4>
-            <p>Background Checks • Drug Testing • Credit Identity Checks</p>
-            <button>Get Quote<i class="fas fa-chevron-circle-right"></i></button>
+            <h1 class="title">All-in-one Employee Screening</h1>
+            <h3 class="subtitle">Solution for U.S. and Global Companies</h4>
+            <p class="text">Background Checks • Drug Testing • Credit Identity Checks</p>
+            <button class="btn-usafact">Get Quote<i class="fas fa-chevron-circle-right"></i></button>
         </div>
        </section>
        <section id="clients">
         <div class="container">
-            <h2>Trusted Partners</h2>
+            <h2 class="section-title">Trusted Partners</h2>
             <div class="container-flex">
                 <div class="client">
                     <img src="<?php echo get_template_directory_uri() . '/assets/img/ata.jpg' ?>" alt="">
@@ -125,8 +118,45 @@ Template Name: Home
        </section>
        <section id="blog-posts">
         <div class="container">
-            <h3>Background Check</h3>
-            
+            <h2 class="section-title">Featured Post</h2>
+            <div class="row">
+                <div class="col-12 col-sm-4 col-md-4 col-lg4 col-xl-4">
+                    <div class="article-container">
+                        <a href="#">
+                            <div class="thumbnail" style="background-image: url(<?php echo get_template_directory_uri() . '/assets/img/article.jpeg' ?>);"></div>
+                            <h3 class="title-article">Crisis Comunication</h3>
+                            <p class="excerpt-article">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam doloremque veniam atque, repudiandae!
+                            </p>
+                            <a href="#" class="link-article">Read More <i class="fas fa-chevron-circle-right"></i></a>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4 col-md-4 col-lg4 col-xl-4">
+                    <div class="article-container">
+                        <a href="#">
+                            <div class="thumbnail" style="background-image: url(<?php echo get_template_directory_uri() . '/assets/img/article.jpeg' ?>);"></div>
+                            <h3 class="title-article">Crisis Comunication</h3>
+                            <p class="excerpt-article">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, quis architecto nulla impedit.
+                            </p>
+                            <a href="#" class="link-article">Read More <i class="fas fa-chevron-circle-right"></i></a>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4 col-md-4 col-lg4 col-xl-4">
+                    <div class="article-container">
+                        <a href="#">
+                            <div class="thumbnail" style="background-image: url(<?php echo get_template_directory_uri() . '/assets/img/article.jpeg' ?>);"></div>
+                            <h3 class="title-article">Crisis Comunication</h3>
+                            <p class="excerpt-article">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. In perferendis dolores alias ad?
+                            </p>
+                            <a href="#" class="link-article">Read More <i class="fas fa-chevron-circle-right"></i></a>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
        </section>
 

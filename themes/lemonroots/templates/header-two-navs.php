@@ -13,7 +13,8 @@
           $site_logo = get_option( 'options_site_logo' );
 
           if ( ! $site_logo ) {
-            echo bloginfo( 'name' );
+            echo the_custom_logo();
+            
           } else {
 
             $args = [
