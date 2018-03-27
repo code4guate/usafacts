@@ -4,35 +4,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
   }
-  nav {
-    ul {
-      li {
-        display: inline-block;
-        padding: 10px 18px;
-        &:last-child {
-          padding: 10px 0px 10px 18px;
-        }
-        a {
-          color: $darken;
-          font-size: 16px;
-        }
-        button {
-          font-size: 16px;
-          color: $white;
-          background-color: $skyblue;
-          border: 1px solid #67d5f7;
-          border-radius: 13px;
-          padding: 7px 18px;
-        }
-      }
-    }
-  }
-}
 
 // wraps the logo itself and the nav toggle
 .navbar-header {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -43,9 +19,9 @@
       max-height: 60px;
     }
   }
-
   &::before,
   &::after {
     display: none;
+  }
   }
 }

@@ -1,66 +1,65 @@
-.navbar {
-	padding: 0px;
-}
-
-html.no-js {
-    margin: 0px !important;
-}
-
-
-
+// Section Hero
 section#hero {
 	width: 100%;
-	padding: 120px 0px;
+	padding: 150px 0px 100px 0px;
 	color: $white;
 	background-position: center;
 	background-size: cover;
 	text-align: center;
 	border-bottom: 1px solid #d5d1ca;
+	.title {
+		font-size: 35px;
+		margin-bottom: 20px;
+	}
 	.subtitle {
-		font-size: 30px;
-		margin: 0px;
+		font-size: 22px;
+		margin: 5px;
 	}
 	.text {
-		font-size: 18px;
+		font-size: 12px;
+	}
+	.btn-usafact {
+		margin-top: 55px;
 	}
 }
 
-.section-title {
-	font-size: 30px;
-	color: $darken;
-	margin: 0px;
-}
-
+// Section Clients
 section#clients {
 	width: 100%;
 	background-color: $white;
-	padding: 30px 0px 50px 0px;
+	padding: 45px 0px 70px 0px;
 	text-align: center;
 	.container-flex {
+		width: 100%;
 		display: flex;
-		justify-content: space-between;
 		flex-wrap: wrap;
 		.client {
-			width: auto;
+			width: 50%;
 			display: flex;
+			justify-content: center;
 			align-items: center;
 			margin-top: 50px;
+			img {
+				width: inherit;
+				height: 80px;
+			}
 		}
 	}
 }
 
-section#link-blocks {
+// Section services
+section#services {
 	width: 100%;
 	.container-flex {
 		width: 100%;
 		display: flex;
 		flex-wrap: wrap;
 		.container-item {
-			width: percentage(1/3);
-			padding: 0px 40px;
+			width: 100%;
+			padding: 0px 15px;
 			color: $white;
-			min-height: 225px;
-			max-height: 225px;
+			min-height: 250px;
+			max-height: 250px;
 			display: flex;
 			justify-content: center;
 			align-items: center;
@@ -71,39 +70,39 @@ section#link-blocks {
 			background-repeat: no-repeat;
 			overflow: hidden;
 			.item { 
-				h3 {
+				h3.title-item {
 					font-size: 25px;
 				}
 				.line {
-					width: 125px;
+					width: 192px;
 					height: 1px;
 					background-color: $white;
 					margin-top: 9px;
 					margin-bottom: 13px;
 				}
-				a {
-					font-size: 14px;
+				a.link-item {
+					font-size: 18px;
 					color: $white;
 				}
-				p {
-					font-size: 12px;					
-					margin-bottom: 15px;
+				p.text-item {
+					font-size: 15px;					
+					margin-bottom: 20px;
 				}	
 			}
 			&:nth-child(1), &:nth-child(5) {
 				background-color: $skyblue;
 			}
-			&:nth-child(2), &:nth-child(6) {
+			&:nth-child(2), &:nth-child(4) {
 				background-color: #eaeaea;
 				color: $darken;
 				.line {
 					background-color: $darken;
 				}
-				a {
+				a.link-item {
 					color: $darken;
 				}
 			}
-			&:nth-child(3), &:nth-child(4) {
+			&:nth-child(3), &:nth-child(6) {
 				background-color: $blue;
 			}
 		}

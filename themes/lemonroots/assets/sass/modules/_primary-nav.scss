@@ -1,0 +1,45 @@
+.navbar-collapse {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	background-color: $white;
+	text-align: center;
+	padding: 0px 15px;
+	border-top: 1px solid #e7e7e7;
+	#menu-main {
+		margin: 5px 0px 10px 0px;
+		li {
+	        padding: 10px 15px;
+	        a {
+	          color: $darken;
+	          font-size: 16px;
+	          transition: .5s all ease-out;
+	          &:hover {
+	          	color: $blue;
+	          }
+	        }
+	    }
+		.telephone-btn { 
+			text-align: center;
+			font-size: 16px;
+			color: $white;
+			background-color: $skyblue;
+			border-radius: 13px;
+			padding: 10px 15px;
+			cursor: pointer;
+			transition: 1s all ease-out;
+			a {
+				color: $white;
+				&:hover {
+					color: $white;
+				}
+			}
+			&:hover {
+				background-color: $blue;
+			}
+		}
+	}
+}
+
+

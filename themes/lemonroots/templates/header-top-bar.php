@@ -5,7 +5,7 @@
   }
 ?>
 
-<div class="header__top-bar">
+<div class="header__top-bar d-none d-lg-block">
   <div class="container">
     <div class="row">
       <div class="col-sm-12">

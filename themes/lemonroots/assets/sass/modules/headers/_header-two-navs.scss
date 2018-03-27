@@ -8,6 +8,7 @@
   @media (min-width: $grid-float-breakpoint){ // when nav is not collapsed
     display: flex;
     justify-content: space-between;
+    width: 100%;
   }
 }
 

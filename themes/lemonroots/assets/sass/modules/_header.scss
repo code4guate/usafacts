@@ -1,5 +1,6 @@
 .site-header {
   	min-height: 0;
+    position: relative;
   	//padding: 15px 0;
 }
 
@@ -68,8 +69,6 @@
     }	
 }
 
-@media (max-width: 360px) {
-    .header__top-bar {
-        display: none;
-    }
+.header__wrap {
+    width: 100%;
 }

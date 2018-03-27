@@ -9,17 +9,20 @@ footer {
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
+		h2 {
+			font-size: 36px;
+		}
 		button {
 			margin-top: 30px;
 		}
 	}
 	.footer-main {
 		width: 100%;
-		padding: 50px 0px;
-		background-position: right 80px;
+		padding: 0px 0px 50px 0px;
+		background-position: right bottom;
 		background-repeat: no-repeat;
-
 		h3 {
+			margin-top: 40px;
 			font-size: 26px;
 			color: $white;
 		}
@@ -31,7 +34,7 @@ footer {
 		}
 		img {
 			width: 200px;
-			margin-top: -10px;
+			margin-top: 40px;
 			margin-bottom: 20px;
 		}
 	}
