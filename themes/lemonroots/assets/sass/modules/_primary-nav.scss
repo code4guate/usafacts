@@ -8,12 +8,12 @@
 	padding: 0px 15px;
 	border-top: 1px solid #e7e7e7;
 	#menu-main {
-		margin: 5px 0px 10px 0px;
+		margin: 5px 0px 15px 0px;
 		li {
 	        padding: 10px 15px;
 	        a {
 	          color: $darken;
-	          font-size: 16px;
+	          font-size: 18px;
 	          transition: .5s all ease-out;
 	          &:hover {
 	          	color: $blue;
@@ -22,7 +22,7 @@
 	    }
 		.telephone-btn { 
 			text-align: center;
-			font-size: 16px;
+			font-size: 18px;
 			color: $white;
 			background-color: $skyblue;
 			border-radius: 13px;
@@ -37,6 +37,29 @@
 			}
 			&:hover {
 				background-color: $blue;
+			}
+		}
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	.navbar-collapse {
+		position: static;
+		top: 100%;
+		left: 0;
+		width: auto;
+		padding: 0px;
+		border-top: 0px;
+		#menu-main {
+			margin: 0px;
+			display: inline-block;
+			float: right;
+			li {
+		        padding: 10px 20px;
+		        display: inline-block;
+		    }
+			.telephone-btn { 
+				padding: 10px 20px;
 			}
 		}
 	}

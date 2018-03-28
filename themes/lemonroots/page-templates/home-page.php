@@ -45,7 +45,7 @@ Template Name: Homepage
                         <div class="line"></div>
                         <p class="text-item">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            <span class="d-none d-md-block">
+                            <span class="d-none d-lg-block">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua 
                             </span>
                         </p>
@@ -58,7 +58,7 @@ Template Name: Homepage
                         <div class="line"></div>
                        <p class="text-item">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            <span class="d-none d-md-block">
+                            <span class="d-none d-lg-block">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua 
                             </span>
                         </p>
@@ -71,7 +71,7 @@ Template Name: Homepage
                         <div class="line"></div>
                         <p class="text-item">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            <span class="d-none d-md-block">
+                            <span class="d-none d-lg-block">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua 
                             </span>
                         </p>
@@ -84,7 +84,7 @@ Template Name: Homepage
                         <div class="line"></div>
                         <p class="text-item">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            <span class="d-none d-md-block">
+                            <span class="d-none d-lg-block">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua 
                             </span>
                         </p>
@@ -97,7 +97,7 @@ Template Name: Homepage
                         <div class="line"></div>
                         <p class="text-item">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            <span class="d-none d-md-block">
+                            <span class="d-none d-lg-block">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua 
                             </span>
                         </p>
@@ -110,7 +110,7 @@ Template Name: Homepage
                         <div class="line"></div>
                        <p class="text-item">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            <span class="d-none d-md-block">
+                            <span class="d-none d-lg-block">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua 
                             </span>
                         </p>
@@ -119,7 +119,7 @@ Template Name: Homepage
                 </div>
             </div>
         </section>
-        <section id="blog-posts" class="d-none d-md-block">
+        <section id="blog-posts" class="d-none d-lg-block">
             <div class="container">
             <h2 class="section-title">Featured Post</h2>
             <div class="row">

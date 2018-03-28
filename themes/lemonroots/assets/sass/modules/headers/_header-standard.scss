@@ -1,6 +1,5 @@
 // wraps the logo container and nav container
 .header__wrap {
-  @include media-breakpoint-up(md) { // when nav is not collapsed
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -12,7 +11,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 0;
+  padding: 15px 0;
   .custom-logo-link {
     .custom-logo {
       width: inherit;
@@ -23,5 +22,16 @@
   &::after {
     display: none;
   }
+}
+
+@include media-breakpoint-up(lg) {
+  .navbar-header {
+    width: auto !important;
+    .custom-logo-link {
+      .custom-logo {
+        width: inherit;
+        max-height: 80px;
+      }
+    }
   }
 }
