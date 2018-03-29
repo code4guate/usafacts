@@ -35,9 +35,8 @@
     ?>
     
     <?php if (!is_front_page() ): ?>
-        <?php $image = get_field('background-image'); 
+        <?php $image = get_field('background'); 
         $globalBackground = get_field('banner_test' , 'option'); ?>
-
 
         <?php if($baseFields['custom_header_text']) {
         $backgroundClass = '';
@@ -53,12 +52,16 @@
         <?php } else if($image) { ?>
             <div class="image-header standard-background-header"> 
                 <div class="container">
-                    <?php if($baseFields['hide_title']) { ?>
-                    <?php } else if($baseFields['custom_title']) { ?>
-                        <h1><?php echo $baseFields['custom_title']; ?></h1>
-                    <?php } else { ?> 
-                        <h1><?php echo roots_title(); ?></h1>
-                    <?php } ?>
+                   <div class="container-fields">
+                       <?php if($baseFields['hide_title']) { ?>
+                       <?php } else if($baseFields['custom_title']) { ?>
+                           <h1><?php echo $baseFields['custom_title']; ?></h1>
+                       <?php } else { ?> 
+                           <h1><?php echo roots_title(); ?></h1>
+                           <p><?php echo $resume = get_field('excerpt'); ?></p>
+                           <a href="<?php echo $resume = get_field('button'); ?>">Order a <?php echo roots_title(); ?><i class="fas fa-chevron-circle-right"></i></a>
+                       <?php } ?>
+                   </div>
                 </div>
             </div>
 

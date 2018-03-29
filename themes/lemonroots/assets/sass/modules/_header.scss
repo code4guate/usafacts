@@ -53,20 +53,41 @@
     padding-top: 60px;
     padding-bottom: 60px;
     @include media-breakpoint-up(sm) {
-    	padding-top: 85px;
-    	padding-bottom: 85px;
+    	padding-top: 80px;
+    	padding-bottom: 80px;
     }
-    @include media-breakpoint-up(md) {
-    	padding-top: 115px;
-    	padding-bottom: 115px;
+    @include media-breakpoint-up(lg) {
+    	padding-top: 100px;
+    	padding-bottom: 100px;
     }
 }
 
 
 .standard-header, .image-header {
-    h1 {
-    	margin-bottom: 0px;
-    }	
+    .container-fields {
+        width: 50%;
+        h1 {
+            font-size: 30px;
+            color: $white;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }   
+        p {
+            font-size: 12px;
+            color: $white;
+            margin-bottom: 45px;
+        }
+        a {
+            font-size: 18px;
+            background-color: $skyblue;
+            color: $white;
+            padding: 10px 25px;
+            border-radius: 12px;
+            svg {
+                margin-left: 10px;
+            }
+        }
+    }
 }
 
 .header__wrap {
