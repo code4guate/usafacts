@@ -7,18 +7,18 @@ section#hero {
 	background-size: cover;
 	text-align: center;
 	.title {
-		font-size: 35px;
+		font-size: get-size(map45);
 		margin-bottom: 20px;
 	}
 	.subtitle {
-		font-size: 20px;
+		font-size: get-size(map25);
 		margin: 5px;
 	}
 	.text {
-		font-size: 12px;
+		font-size: get-size(map16);
 	}
 	.btn-usafact {
-		font-size: 24px;
+		font-size: get-size(map25);
 		background-color: $skyblue;
 		color: $white;
 		padding: 10px 26px;
@@ -35,36 +35,15 @@ section#hero {
 	}
 }
 
-@include media-breakpoint-up(sm) {
-	section#hero {
-		.title {
-			font-size: 42px;
-		}
-		.subtitle {
-			font-size: 24px;
-		}
-		.text {
-			font-size: 14px;
-		}
-	}
-}
-
 
 @include media-breakpoint-up(md) {
 	section#hero {
 		padding: 130px 0px 90px 0px;
-		.title {
-			font-size: 45px;
-		}
 		.subtitle {
-			font-size: 25px;
 			display: inline-flex;
 			span {
 				margin-right: 5px;
 			}
-		}
-		.text {
-			font-size: 16px;
 		}
 	}
 }
@@ -72,19 +51,6 @@ section#hero {
 @include media-breakpoint-up(lg) {
 	section#hero {
 		padding: 125px 0px 110px 0px;
-		.title {
-			font-size: 52px;
-		}
-		.subtitle {
-			font-size: 26px;
-			display: inline-flex;
-			span {
-				margin-right: 5px;
-			}
-		}
-		.text {
-			font-size: 16px;
-		}
 	}
 }
 
@@ -110,13 +76,13 @@ section#clients {
 			}
 		}
 	}
+	h2.section-title {
+		font-size: get-size(map28);
+	}
 }
 
 @include media-breakpoint-up(sm) {
 	section#clients {
-		.section-title {
-			font-size: 38px;
-		}
 		.container-flex {
 			.client {
 				img {
@@ -142,26 +108,10 @@ section#clients {
 	}
 }
 
-@include media-breakpoint-up(md) {
-	section#clients {
-		.container-flex {
-			.client {
-				width: percentage(1/3);
-				img {
-					width: auto;
-					height: 100px;
-				}
-			}
-		}
-	}
-}
 
 @include media-breakpoint-up(lg) {
 	section#clients {
 		padding: 40px 0px 55px 0px;
-		.section-title {
-			font-size: 30px;
-		}
 		.container-flex {
 			.client {
 				width: percentage(1/6);
@@ -198,7 +148,7 @@ section#services {
 			overflow: hidden;
 			.item { 
 				h3.title-item {
-					font-size: 26px;
+					font-size: get-size(map25);
 				}
 				.line {
 					width: 125px;
@@ -208,7 +158,7 @@ section#services {
 					margin-bottom: 13px;
 				}
 				a.link-item {
-					font-size: 18px;
+					font-size: get-size(map14);
 					color: $white;
 					&:hover {
 						text-decoration: underline !important;
@@ -252,17 +202,6 @@ section#services {
 		.container-flex {
 			.container-item {
 				width: 50%;
-				.item { 
-					h3.title-item {
-						font-size: 22px;
-					}
-					a.link-item {
-						font-size: 14px;
-					}
-					p.text-item {
-						font-size: 12px;		
-					}	
-				}
 				&:nth-child(4) {
 					background-color: $skyblue;
 					color: $white;
@@ -271,7 +210,6 @@ section#services {
 					}
 					a.link-item {
 						color: $white;
-						font-size: 14px;
 					}
 				}
 				&:nth-child(5) {
@@ -281,7 +219,6 @@ section#services {
 						background-color: $darken;
 					}
 					a.link-item {
-						font-size: 14px;
 						color: $darken;
 					}
 				}
@@ -297,9 +234,6 @@ section#services {
 				min-height: 250px;
 				width: percentage(1/3);
 				.item { 
-					h3.title-item {
-						font-size: 25px;
-					}
 					.line {					
 						height: 1px;
 					}
@@ -318,7 +252,6 @@ section#services {
 					}
 					a.link-item {
 						color: $white;
-						font-size: 17px;
 					}
 				}
 				&:nth-child(2), &:nth-child(6) {
@@ -329,7 +262,6 @@ section#services {
 					}
 					a.link-item {
 						color: $darken;
-						font-size: 17px;
 					}
 				}
 				&:nth-child(6) {
@@ -369,26 +301,24 @@ section#services {
 	}
 }
 
-// articles
-
+// Featured Posts
 .article-container {
 	text-align: left;
 	margin-top: 35px;
-	.title-article {
-		font-size: 16px;
+	h3.title-article {
+		font-size: get-size(map16);
 		color: $blue;
 		margin-top: 20px;
 		&:hover {
 			color: $skyblue;
 		}
 	}
-	.excerpt-article {
-		font-size: 12px;
+	p.excerpt-article {
 		color: $darken;
 		margin-bottom: 10px;
 	}
 	.link-article {
-		font-size: 14px;
+		font-size: get-size(map14);
 		color: $skyblue;
 		&:hover {
 			text-decoration: underline !important;
