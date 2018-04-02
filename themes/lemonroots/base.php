@@ -51,17 +51,19 @@
 
         <?php } else if($image) { ?>
             <div class="image-header standard-background-header"> 
-                <div class="container">
-                   <div class="container-fields">
-                       <?php if($baseFields['hide_title']) { ?>
-                       <?php } else if($baseFields['custom_title']) { ?>
-                           <h1><?php echo $baseFields['custom_title']; ?></h1>
-                       <?php } else { ?> 
-                           <h1><?php echo roots_title(); ?></h1>
-                           <p><?php echo $resume = get_field('excerpt'); ?></p>
-                           <a href="<?php echo $resume = get_field('button'); ?>">Order a <?php echo roots_title(); ?><i class="fas fa-chevron-circle-right"></i></a>
-                       <?php } ?>
-                   </div>
+                <div class="shadow">
+                    <div class="container">
+                       <div class="container-fields">
+                           <?php if($baseFields['hide_title']) { ?>
+                           <?php } else if($baseFields['custom_title']) { ?>
+                               <h1><?php echo $baseFields['custom_title']; ?></h1>
+                           <?php } else { ?> 
+                               <h2><?php echo roots_title(); ?></h2>
+                               <p><?php echo $resume = get_field('excerpt'); ?></p>
+                               <a href="<?php echo $resume = get_field('button'); ?>">Order a <?php echo roots_title(); ?><i class="fas fa-chevron-circle-right"></i></a>
+                           <?php } ?>
+                       </div>
+                    </div>
                 </div>
             </div>
 

@@ -19,6 +19,7 @@
 	          color: $darken;
 	          font-size: 16px;
 	          transition: .5s all ease-out;
+	          text-decoration: none;
 	          &:hover {
 	          	color: $blue;
 	          }
@@ -35,6 +36,7 @@
 			transition: 1s all ease-out;
 			a {
 				color: $white;
+				text-decoration: none;
 				&:hover {
 					color: $white;
 				}

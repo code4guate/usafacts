@@ -159,15 +159,15 @@ function roots_widgets_init() {
 add_action( 'widgets_init', 'roots_widgets_init' );
 
 
-class headerTopLinkWidget extends WP_Widget {
+class fontAwesomeLink extends WP_Widget {
 
     function __construct() {
       // Instantiate the parent object
       $widget_options = array( 
-        'classname' => 'header-top-link',
-        'description' => 'add links to the top header bar'
+        'classname' => 'font-awesome-link',
+        'description' => 'Creates a link preceded by a fontawesome icon'
       );
-      parent::__construct( 'header-top-link', 'Header Top Link', $widget_options);
+      parent::__construct( 'font-awesome-link', 'FontAwesome Link', $widget_options);
     }
 
     function widget( $args, $instance ) {
@@ -218,6 +218,6 @@ class headerTopLinkWidget extends WP_Widget {
 
 
 function lemon_widgets() {
-  register_widget( 'headerTopLinkWidget' );
+  register_widget( 'fontAwesomeLink' );
 }
 add_action( 'widgets_init', 'lemon_widgets' );

@@ -11,9 +11,12 @@
   	font-size: 12px;
   	margin-left: 4px;
   }
-  .header-top-link {
+  .font-awesome-link {
   	display: inline-block;
   	margin-left: 20px;
+    a {
+      text-decoration: none;
+    }
   }
 }
 

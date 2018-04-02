@@ -10,7 +10,7 @@
             </div>
           </article>
         </div>
-        <div class="col-12 col-lg-4">
+        <div class="col-12 col-lg-3 offset-lg-1">
             <?php comments_template('/templates/sidebar.php'); ?>
         </div>
       </div>

@@ -24,3 +24,8 @@ add_theme_support( 'custom-logo', array(
     'width'       => 278
 ) );
 
+// Custom Excerpt
+function custom_length_excerpt($word_count_limit) {
+    $content = wp_strip_all_tags(get_the_content() , true );
+    echo wp_trim_words($content, $word_count_limit);
+}
