@@ -132,23 +132,25 @@ Template Name: Homepage
                 $my_featured_query = new WP_Query($args);
 
                 if ($my_featured_query->have_posts()) :
-                  while($my_featured_query->have_posts()) :
-                    $my_featured_query->the_post();
+                    while($my_featured_query->have_posts()) :
+                        $my_featured_query->the_post();
             ?>
                <div class="col-12 col-sm-4 col-md-4 col-lg4 col-xl-4">
-                  <div class="article-container">
-                      <a href="<?php the_permalink(); ?>" title="Link to <?php the_title_attribute(); ?>">
-                          <div class="featured-thumbnail" style="background-image: url(<?php the_post_thumbnail_url( 'thumbnail' ) ?>);"></div>
-                          <h3 class="title-article"><?php echo the_title(); ?></h3>
-                          <p class="excerpt-article">
-                              <?php custom_length_excerpt(25); ?>
-                          </p>
-                          <a href="<?php the_permalink(); ?>" class="link-article">Read More <i class="fas fa-chevron-circle-right"></i></a>
-                      </a>
-                  </div>
-              </div>         
+                    <div class="article-container">
+                        <div class="container-thumbnail">
+                            <a href="<?php the_permalink(); ?>" title="Link to <?php the_title_attribute(); ?>">
+                                <div class="featured-thumbnail" style="background-image: url(<?php the_post_thumbnail_url( 'large' ) ?>);"></div>
+                            </a>
+                        </div>
+                        <h3 class="title-article"><?php echo the_title(); ?></h3>
+                        <p class="excerpt-article">
+                            <?php custom_length_excerpt(20); ?>
+                        </p>
+                        <a href="<?php the_permalink(); ?>" class="link-article">Read More <i class="fas fa-chevron-circle-right"></i></a>
+                    </div>
+                </div>         
             <?php 
-              endwhile;
+                endwhile;
         ?>
         <?php
             endif;
