@@ -89,11 +89,16 @@ h4 {
 	font-size: get-size(map22);
 }
 
-h5 {
+h5, h6 {
 	font-size: get-size(map16);
 }
 
 h1,
-h2 {
+h2,
+h3,
+h4,
+h5,
+h6,
+{
 	font-weight: bold;
 }
