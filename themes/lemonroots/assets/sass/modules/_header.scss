@@ -53,7 +53,7 @@
 .standard-header, .image-header {
     .shadow {
         width: 100%;
-        background-color: rgba(0,0,0,.5);
+        background-color: rgba(0,0,0,.38);
         padding-top: 60px;
         padding-bottom: 60px;
         @include media-breakpoint-up(sm) {
