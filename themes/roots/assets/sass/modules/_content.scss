@@ -1,0 +1,26 @@
+.content {
+	.entry-content {
+		h1 {
+			font-size: get-size(map32);
+			color: $blue;
+		}
+		h2 {
+			font-size: get-size(map22);
+			color: #00aeef !important;
+			font-weight: medium;
+		}
+		a {
+			color: $skyblue;
+			text-decoration: none;
+			cursor: pointer;
+			&:hover {
+				color: #080eff;
+			}
+		}
+	}
+}
+
+
+
+/* Gallery Shortcode */
+.gallery-row { padding: 15px 0; }

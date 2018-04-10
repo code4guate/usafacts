@@ -1,0 +1,11 @@
+// make all images responsive by default
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+// fix for bootstrap media component
+.media img {
+  max-width: none;
+}

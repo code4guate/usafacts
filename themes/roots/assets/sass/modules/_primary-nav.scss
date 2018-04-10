@@ -1,0 +1,86 @@
+.navbar {
+	padding: 0px;
+	background-color: $white;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+	background-color: transparent;
+	outline: none;
+}
+
+.navbar-collapse {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	background-color: $white;
+	text-align: center;
+	padding: 0px 15px;
+	border-top: 1px solid #e7e7e7;
+	@include bp-sm {
+		position: static;
+		top: 100%;
+		left: 0;
+		width: auto;
+		padding: 0px;
+		border-top: 0px;
+	}
+	#menu-main {
+		margin: 5px 0px 15px 0px;
+		@include bp-sm {
+			margin: 0px;
+			display: inline-block;
+			float: right;
+		}
+		li {
+	        @include bp-sm {
+	        	padding: 0px;
+	        	display: inline-block;
+	        }
+	        a {
+	          color: $darken;
+	          transition: .5s all ease-out;
+	          text-decoration: none;
+	          @include bp-sm {
+	          	display: inline-block;
+	          }
+	          @include bp-md {
+	          	font-size: 16px;
+	          	padding-left: 20px;
+	          	padding-right: 20px; 
+	          }
+	          &:hover {
+	          	color: $blue;
+	          }
+	        }
+	    }
+		.telephone-btn { 
+			text-align: center;
+			color: $white;
+			background-color: $skyblue;
+			border-radius: 13px;
+			cursor: pointer;
+			transition: 1s all ease-out;
+			@include bp-sm {
+				padding: 0px;
+			}
+			a {
+				color: $white;
+				text-decoration: none;
+				@include bp-md {
+					padding-left: 20px;
+					padding-right: 20px; 
+				}
+				&:hover {
+					color: $white;
+				}
+			}
+			&:hover {
+				background-color: $blue;
+			}
+		}
+	}
+}
+

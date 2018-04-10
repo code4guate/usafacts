@@ -1,0 +1,45 @@
+.btn {
+
+  &-default {
+
+  }
+
+  &-primary {
+
+  }
+
+  &-info {
+
+  }
+
+  &-success {
+
+  }
+
+  &-danger {
+    
+  }
+}
+
+.btn-usafact {
+  font-size: get-size(map25);
+  background-color: $skyblue;
+  color: $white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 15px;
+  margin-top: 45px;
+  transition: 1s all ease-out;
+  cursor: pointer;
+  &:hover {
+    background-color: $blue;
+  }
+  svg {
+    margin-left: 10px;
+  }
+}
+
+button:focus {
+    outline: none;
+}
+

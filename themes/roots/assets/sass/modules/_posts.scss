@@ -1,0 +1,58 @@
+.hentry header { }
+.hentry time { }
+.hentry .byline { }
+.hentry .entry-content { 
+	.entry-title {
+		font-size: get-size(map32);
+		color: $blue;
+	}
+	.entry-content {
+		h1 {
+			font-size: get-size(map32);
+			color: $blue;
+		}
+		h2 {
+			font-size: get-size(map22);
+			color: #00aeef !important;
+			font-weight: medium;
+		}
+		a {
+			color: $skyblue;
+			text-decoration: none;
+			cursor: pointer;
+			&:hover {
+				color: #080eff;
+			}
+		}
+	}
+}
+.hentry footer { }
+
+.container-post {
+	padding: 45px 0px;
+	.widget_text {
+		h3{
+			font-size: get-size(map16);
+		}
+	}
+	.font-awesome-link {
+		padding: 10px 0px;
+		border-bottom: 1px solid #ccc;
+		span {
+			svg {
+				font-size: 12px;
+				color: $skyblue;
+			}
+			a {
+				font-size: get-size(map12);
+				width: 100%;
+				margin: 20px 0px;
+				color: $darken;
+				text-decoration: none;
+				&:hover {
+					color: $blue;
+				}
+			}
+		}
+	}
+}

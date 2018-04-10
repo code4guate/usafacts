@@ -1,0 +1,32 @@
+// wraps the logo container and nav container
+.header__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+// wraps the logo itself and the nav toggle
+.navbar-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  @include bp-sm {
+    width: auto !important;
+  }
+  .custom-logo-link {
+    .custom-logo {
+      width: inherit;
+      max-height: 60px;
+      @include bp-lg {
+        width: inherit;
+        max-height: 80px;
+      }
+    }
+  }
+  &::before,
+  &::after {
+    display: none;
+  }
+}
